@@ -1,7 +1,9 @@
-import requests
-from pprint import pprint
+from src.main import *
+from unittest.mock import patch
 
-API_Key = 'dab2e4d2d099b06d753e139496a2fb05'
+def test_root():
+    assert root() == {"message": "Hello World"}
+
 
 city = input("Digite a Cidade: ")
 
