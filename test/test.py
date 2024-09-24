@@ -1,6 +1,10 @@
 from src.main import *
 from unittest.mock import patch
 
+import pytest
+import pytest_asyncio
+
+
 def test_root():
     result = root()
     yield result
